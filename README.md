@@ -5,10 +5,8 @@ stored in [CSV](se_ss/registers.csv) derived from
 [SolarEdge technical notes](https://www.solaredge.com/sites/default/files/sunspec-implementation-technical-note.pdf)
 
 
-For script to work modbus TCP need to be enabled in invertor. Refer 
+For script to work, Modbus TCP need to be enabled in invertor. Refer 
 page 14 of technical notes for instructions to enable.
-
-## Enable modbus TCP
 
 
 ## Usage
