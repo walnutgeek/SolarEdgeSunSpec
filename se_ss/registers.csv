@@ -7,8 +7,8 @@ Address,Size,Name,Type,Units,Description
 40045,8,C_Version,String(16),,SolarEdge Specific Value
 40053,16,C_SerialNumber,String(32),,SolarEdge Unique Value
 40069,1,C_DeviceAddress,uint16,,MODBUS Unit ID
-40070,1,C_SunSpec_DID,uint16,,101 = single phase; 102 = split phase1; 103 = three phase
-40071,1,C_SunSpec_Length,uint16,,Registers 50 = Length of model block
+40070,1,C_SunSpec_DID2,uint16,,101 = single phase; 102 = split phase; 103 = three phase
+40071,1,C_SunSpec_Length2,uint16,,Registers 50 = Length of model block
 40072,1,I_AC_Current,uint16,Amps,AC Total Current value
 40073,1,I_AC_CurrentA,uint16,Amps,AC Phase A Current value
 40074,1,I_AC_CurrentB,uint16,Amps,AC Phase B Current value
@@ -42,4 +42,4 @@ Address,Size,Name,Type,Units,Description
 40104,1,I_Temp_Sink,int16,DegreesC,Heat Sink Temperature
 40107,1,I_Temp_SF,int16,,Scale factor
 40108,1,I_Status,uint16,,Operating State
-40109,1,I_Status_Vendor,uint16,,"Vendor-defined operating state and error codes. For error description,meaning and troubleshooting,refer to the SolarEdge Installation Guide."
+40109,1,I_Status_Vendor,uint16,,"Vendor-defined operating state and error codes."

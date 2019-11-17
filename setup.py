@@ -8,6 +8,7 @@ cmdclass_dict = {}  # type:ignore
 
 install_requires = [
     "pymodbus",
+    "click",
 ]
 
 dev_requires = [
@@ -61,7 +62,7 @@ setup(
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
     ],
-    description="To read SolarEdge's SunSpec",
+    description="Read SolarEdge's SunSpec over modbus TCP",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/walnutgeek/SolarEdgeSunSpec",
