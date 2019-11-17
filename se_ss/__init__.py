@@ -57,7 +57,7 @@ for e in entries:
 next_addr = None
 for e in entries:
     if next_addr is not None:
-        assert next_addr <= e.addr, f'Overlap !!!Error!!! {e} {e.addr}<{next_addr}'
+        assert next_addr <= e.addr, f'Field overlap:{e} {e.addr}<{next_addr}'
     next_addr = e.end_addr
 
 
