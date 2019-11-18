@@ -1,4 +1,5 @@
 import json
+from datetime import datetime
 from time import sleep
 from typing import List
 
@@ -42,10 +43,13 @@ def read_regs(ip, port=502):
 def main(ip: str, port: int = 502, out="human", columns: List[str] = []):
     if not columns:
         columns = NAME_CHOICES
+    dt_now = datetime.now()
     # from se_ss.tests import sample; r = sample('at_night.bin')
     r = read_regs(ip, port)
+    # from se_ss.tests import dump; dump(f"at_{dt_now:%H%M%S}.bin", r)
     d = {k: se_ss.entries_by_name[k].extract(r) for k in columns}
     if out == "json":
+        d["timestamp"] = dt_now.isoformat()
         print(json.dumps(d))
     else:
         d = {k: str(v) for k, v in d.items()}

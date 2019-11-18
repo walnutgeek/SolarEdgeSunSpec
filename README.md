@@ -8,6 +8,15 @@ stored in [CSV](se_ss/registers.csv) derived from
 For script to work, Modbus TCP need to be enabled in invertor. Refer 
 page 14 of technical notes for instructions to enable.
 
+## Install dependencies
+
+Run time:
+
+`pip install -e .`
+
+All development dependencies (pytest ... and stuff):
+
+`pip install -e .[dev]`
 
 ## Usage
 ```

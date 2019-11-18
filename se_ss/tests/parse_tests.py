@@ -5,7 +5,18 @@ from se_ss.tests import sample
 
 
 @pytest.mark.parametrize(
-    "buff", [sample("at_night.bin"),],
+    "buff",
+    [
+        sample("at_night.bin"),
+        sample("at_081441.bin"),
+        sample("at_081503.bin"),
+        sample("at_082848.bin"),
+        sample("at_104830.bin"),
+        sample("at_131908.bin"),
+        sample("at_140452.bin"),
+        sample("at_143216.bin"),
+        sample("at_151910.bin"),
+    ],
 )
 def test_parse(buff):
     assert se_ss.entries[0].extract(buff) == 0x53756E53
